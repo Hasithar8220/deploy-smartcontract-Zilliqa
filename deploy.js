@@ -8,6 +8,7 @@ const {
 const zilliqa = new Zilliqa('https://dev-api.zilliqa.com');
 const config = require('./config.json');
 
+
 // These are set by the core protocol, and may vary per-chain.
 // You can manually pack the bytes according to chain id and msg version.
 // For more information: https://apidocs.zilliqa.com/?shell#getnetworkid
@@ -91,6 +92,7 @@ console.log(`My account bech32 address is: ${toBech32Address(address)}`);
       },
     ];
 
+    
     const contract = zilliqa.contracts.new(code, init);
 
     // Deploy the contract.
